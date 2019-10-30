@@ -1,0 +1,26 @@
+
+// Header >>
+include::setting.adoc[]
+// << Header
+
+= Title
+
+// Foreword
+
+== Chapter 1
+// include sections/*.adoc here
+
+== Chapter 2
+// include
+
+
+:sectnums!:
+
+// include sections/appendix.adoc if needed
+// [appendix]
+// = Appendix A
+
+// uncomment below if needed
+// [index]
+// = Index
+

@@ -1,0 +1,48 @@
+// ===========
+//  Attribute
+// ===========
+
+:lang: ja
+:doctype: book
+:description:
+:docname: My awesome book
+:imagesdir: ./images
+:icons: font
+:iconsdir: ./images/icons
+:pdf-fontsdir: ./fonts
+:pdf-style: ./style/style.yml
+:author: Yukatayu
+:revnumber: 1.0
+// :revdate: :{docdatetime}
+// :revremark: {docdate}
+
+:sectnums:
+:chapter-label:
+
+:toc:
+:toclevels: 2
+
+//:source-highlighter: coderay
+//:source-highlighter: pygments
+:source-highlighter: rouge
+//:rouge-style: monokai
+:stem: latexmath
+
+:toc-title: 目次
+:preface-title: はじめに
+:appendix-caption: 付録
+:caution-caption: 注意
+:example-caption: 例
+:figure-caption: 図
+:important-caption: 重要
+:last-update-label: 最終更新
+:listing-caption: コード
+:manname-title: 名前
+:note-caption: 注記
+:table-caption: 表
+:tip-caption: ヒント
+:toc-title: 目次
+:untitled-label: 無題
+:version-label: version
+:warning-caption: 警告
+
