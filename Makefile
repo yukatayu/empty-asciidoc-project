@@ -9,10 +9,10 @@ all:
 with-docker:
 	mkdir -p images
 	mkdir -p build
-	sudo docker run -v $(CURDIR):/documents --rm -h asciidoc yukatayu/asciidoc_env_v1:latest
+	docker run -v $(CURDIR):/documents --rm -h asciidoc yukatayu/asciidoc_env_v1:latest
 
 clean-with-docker:
-	sudo docker run -v $(CURDIR):/documents --rm -h asciidoc yukatayu/asciidoc_env_v1:latest clean
+	docker run -v $(CURDIR):/documents --rm -h asciidoc yukatayu/asciidoc_env_v1:latest clean
 
 clean:
 	rm -f images/stem-*.png
