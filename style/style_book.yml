@@ -297,55 +297,6 @@ footnotes:
 # For book #
 ############
 
-#header:
-#  font_size: $base_font_size_small
-#  font_color: $base_font_color
-#  border_style: double
-#  border_color: $base_border_color
-#  border_width: 0.25
-#  height: $base_line_height_length * 2.5
-#  vertical_align: bottom
-#  padding: [$base_line_height_length / 2, 1, 0, 1]
-#  font_size: $base_font_size_small
-#  line_height: 1
-#  vertical_align: middle
-#  recto:
-#    left:
-#      content:  ''
-#    center:
-#      content: ''
-#    right:
-#      content:  '{section-or-chapter-title} | *{page-number}*'
-#  verso:
-#    left:
-#      content:  '*{page-number}* | {chapter-title}'
-#    center:
-#      content: ''
-#    right:
-#      content:  ''
-#
-#footer:
-#  recto:
-#    left:
-#      content: ''
-#      # content: '{document-title}'
-#    center:
-#      content: ''
-#    right:
-#      content: ''
-#  verso:
-#    left:
-#      content: ''
-#    center:
-#      content: ''
-#    right:
-#      content: ''
-
-
-##############
-# For Report #
-##############
-
 header:
   font_size: $base_font_size_small
   font_color: $base_font_color
@@ -355,39 +306,38 @@ header:
   height: $base_line_height_length * 2.5
   vertical_align: bottom
   padding: [$base_line_height_length / 2, 1, 0, 1]
+  font_size: $base_font_size_small
+  line_height: 1
+  vertical_align: middle
   recto:
     left:
-      content:  '{chapter-title}'
+      content:  ''
+    center:
+      content: ''
     right:
-      content:  'Last modified: {docdate}'
+      content:  '{section-or-chapter-title} | *{page-number}*'
   verso:
     left:
-      content:  '{chapter-title}'
+      content:  '*{page-number}* | {chapter-title}'
+    center:
+      content: ''
     right:
-      content:  'Last modified: {docdate}'
+      content:  ''
 
 footer:
-  font_size: $base_font_size_min
-  font_color: $base_font_color
-  # NOTE if background_color is set, background and border will span width of page
-  border_color: $base_border_color
-  border_style: solid
-  border_width: 0.25
-  height: $base_line_height_length * 3.5
-  line_height: 1
-  padding: [$base_line_height_length / 2, 1, 0, 1]
-  vertical_align: top
   recto:
     left:
-      content: '{document-title}'
+      content: ''
+      # content: '{document-title}'
     center:
-      content: '{page-number}'
+      content: ''
     right:
       content: ''
   verso:
     left:
-      content: '{document-title}'
+      content: ''
     center:
-      content: '{page-number}'
+      content: ''
     right:
       content: ''
+

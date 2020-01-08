@@ -5,13 +5,23 @@
 :lang: ja
 :doctype: book
 :description:
+
+// 書籍名を変更してください
 :docname: My awesome book
 :imagesdir: ./images
 :icons: font
 :iconsdir: ./images/icons
 :pdf-fontsdir: ./fonts
-:pdf-style: ./style/style.yml
+
+// レポートと本のどちらかのスタイルを選び
+// 好きな方をコメントアウトしてください
+:pdf-style: ./style/style_report.yml
+//:pdf-style: ./style/style_book.yml
+
+// 著者名を変更してください
 :author: Yukatayu
+
+// 第二版以降ではバージョン番号を変えてください
 :revnumber: 1.0
 // :revdate: :{docdatetime}
 // :revremark: {docdate}
