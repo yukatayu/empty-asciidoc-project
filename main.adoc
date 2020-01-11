@@ -7,6 +7,9 @@ include::setting.adoc[]
 
 // Foreword
 
+== Chapter 0
+include::sections/00_sample.adoc[]
+
 == Chapter 1
 // include sections/*.adoc here
 

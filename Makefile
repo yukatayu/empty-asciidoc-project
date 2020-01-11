@@ -3,7 +3,7 @@ all:
 	mkdir -p build
 	rm -f build/book.pdf build/book.html
 	asciidoctor -b html5 -o build/book.html main.adoc
-	asciidoctor-pdf -r asciidoctor-mathematical -r asciidoctor-pdf-cjk -o _tmp_book.pdf  main.adoc
+	asciidoctor-pdf -r asciidoctor-mathematical -r ./fix_svg_font.rb -r asciidoctor-pdf-cjk -r asciidoctor-pdf-cjk-kai_gen_gothic -o _tmp_book.pdf  main.adoc
 	mv _tmp_book.pdf build/book.pdf
 
 with-docker:
