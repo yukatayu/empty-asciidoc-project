@@ -215,6 +215,76 @@ a \leq \frac{b}{c}
 この段落はリード文になります ── ゆかたゆ
 ```
 
+==== グラフの描画
+
+詳しくは https://asciidoctor.org/docs/asciidoctor-diagram/[公式ドキュメント] を参照のこと。
+
+```
+[graphviz,scaledwidth=20]
+....
+digraph G {
+    d -> e [dir="both"]
+    f -> g [dir="both"]
+    a -> d
+    a -> b -> d -> f
+    c -> e -> g
+}
+....
+```
+
+[graphviz,scaledwidth=20]
+....
+digraph G {
+    d -> e [dir="both"]
+    f -> g [dir="both"]
+    a -> d
+    a -> b -> d -> f
+    c -> e -> g
+}
+....
+
+```
+[ditaa,scaledwidth=80]
+....
+                   +-------------+
+                   | Asciidoctor |-------+
+                   |   diagram   |       |
+                   +-------------+       | PNG out
+                       ^                 |
+                       | ditaa in        |
+                       |                 v
+ +--------+   +--------+----+    /---------------\
+ |        | --+ Asciidoctor +--> |               |
+ |  Text  |   +-------------+    |   Beautiful   |
+ |Document|   |   !magic!   |    |    Output     |
+ |     {d}|   |             |    |               |
+ +---+----+   +-------------+    \---------------/
+     :                                   ^
+     |          Lots of work             |
+     +-----------------------------------+
+....
+
+```
+
+[ditaa,scaledwidth=80]
+....
+                   +-------------+
+                   | Asciidoctor |-------+
+                   |   diagram   |       |
+                   +-------------+       | PNG out
+                       ^                 |
+                       | ditaa in        |
+                       |                 v
+ +--------+   +--------+----+    /---------------\
+ |        | --+ Asciidoctor +--> |               |
+ |  Text  |   +-------------+    |   Beautiful   |
+ |Document|   |   !magic!   |    |    Output     |
+ |     {d}|   |             |    |               |
+ +---+----+   +-------------+    \---------------/
+     :                                   ^
+     |          Lots of work             |
+     +-----------------------------------+
+....
 
 ==== その他覚えておくこと
 
