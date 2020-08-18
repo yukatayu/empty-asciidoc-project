@@ -1,6 +1,7 @@
 build
 .vscode
+.asciidoctor
 .out
 *.swp
 **/stem-*.png
-
+**/diag-*.png
